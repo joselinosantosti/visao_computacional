@@ -1,3 +1,4 @@
+#Importacao das bibliotecas, a numpy e uma das mais importantes para IA
 import numpy as np
 import cv2
 
