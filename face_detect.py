@@ -10,7 +10,7 @@ detector = cv2.CascadeClassifier('xml/frontalface.xml')
 #Executa a detector (pulo do gato)
 faces = detector.detectMultiScale(img_cinza, scaleFactor = 1.05, minNeighbors = 7, minSize = (30,30), flags = cv2.CASCADE_SCALE_IMAGE)
 
-#Desenha retangulos azuis na imagem original (colorida)
+#Desenha retangulos azuis ao redor da face na imagem original (colorida)
 for (x, y, w, h) in faces:
 	cv2.rectangle(imagem, (x, y), (x + w, y + h), (255, 0, 0), 7)
 
